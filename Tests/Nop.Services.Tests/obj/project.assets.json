@@ -1,0 +1,143 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Nop.Core/4.3.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Nop.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Nop.Core.dll": {}
+        }
+      },
+      "Nop.Data/4.3.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Nop.Core": "4.3.0"
+        },
+        "compile": {
+          "bin/placeholder/Nop.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Nop.Data.dll": {}
+        }
+      },
+      "Nop.Services/4.3.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Nop.Core": "4.3.0",
+          "Nop.Data": "4.3.0"
+        },
+        "compile": {
+          "bin/placeholder/Nop.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Nop.Services.dll": {}
+        }
+      },
+      "Nop.Tests/4.3.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Nop.Core": "4.3.0",
+          "Nop.Services": "4.3.0"
+        },
+        "compile": {
+          "bin/placeholder/Nop.Tests.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Nop.Tests.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Nop.Core/4.3.0": {
+      "type": "project",
+      "path": "../../Libraries/Nop.Core/Nop.Core.csproj",
+      "msbuildProject": "../../Libraries/Nop.Core/Nop.Core.csproj"
+    },
+    "Nop.Data/4.3.0": {
+      "type": "project",
+      "path": "../../Libraries/Nop.Data/Nop.Data.csproj",
+      "msbuildProject": "../../Libraries/Nop.Data/Nop.Data.csproj"
+    },
+    "Nop.Services/4.3.0": {
+      "type": "project",
+      "path": "../../Libraries/Nop.Services/Nop.Services.csproj",
+      "msbuildProject": "../../Libraries/Nop.Services/Nop.Services.csproj"
+    },
+    "Nop.Tests/4.3.0": {
+      "type": "project",
+      "path": "../Nop.Tests/Nop.Tests.csproj",
+      "msbuildProject": "../Nop.Tests/Nop.Tests.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Nop.Services >= 4.3.0",
+      "Nop.Tests >= 4.3.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\TRUONG\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "4.3.0",
+    "restore": {
+      "projectUniqueName": "D:\\Thuong_Mai_Dien_Tu\\Tests\\Nop.Services.Tests\\Nop.Services.Tests.csproj",
+      "projectName": "Nop.Services.Tests",
+      "projectPath": "D:\\Thuong_Mai_Dien_Tu\\Tests\\Nop.Services.Tests\\Nop.Services.Tests.csproj",
+      "packagesPath": "C:\\Users\\TRUONG\\.nuget\\packages\\",
+      "outputPath": "D:\\Thuong_Mai_Dien_Tu\\Tests\\Nop.Services.Tests\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\TRUONG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "D:\\Thuong_Mai_Dien_Tu\\Libraries\\Nop.Services\\Nop.Services.csproj": {
+              "projectPath": "D:\\Thuong_Mai_Dien_Tu\\Libraries\\Nop.Services\\Nop.Services.csproj"
+            },
+            "D:\\Thuong_Mai_Dien_Tu\\Tests\\Nop.Tests\\Nop.Tests.csproj": {
+              "projectPath": "D:\\Thuong_Mai_Dien_Tu\\Tests\\Nop.Tests\\Nop.Tests.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.103\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
